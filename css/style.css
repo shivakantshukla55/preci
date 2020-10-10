@@ -1670,4 +1670,9 @@ h3.tittle {
     background: rgb(255, 247, 0);
 }
 
+@media(max-width: 480px) {
+    .flickity-prev-next-button {
+        display: none;
+    }
+}
   
