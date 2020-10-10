@@ -22,6 +22,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- Bootstrap-Core-CSS -->
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- touch-friendly carousels with Flickity -->
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<!-- Style-CSS -->
 	<!-- font-awesome-icons -->
 	<link href="css/font-awesome.css" rel="stylesheet">
@@ -57,7 +59,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<input type="checkbox" id="drop" />
 					<ul class="menu mt-2">
 						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="about.html">About Us</a></li>
+						<li><a href="about.html">About</a></li>
 						<!-- First Tier Drop Down -->
 						<!-- <li>
 							<label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down"
@@ -99,8 +101,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="row banner-grids">
 				<div class="col-lg-6 banner-image">
 					<div class="effect-w3">
-						<img src="images/technology-tool-metal-machine-lathe-industry.jpg" alt="Machine Tools" class="img-fluid image1">
-
+						<!-- <img src="images/technology-tool-metal-machine-lathe-industry.jpg" alt="Machine Tools" class="img-fluid image1"> -->
+						<div class="main-gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+							<div class="gallery-cell"></div>
+							<div class="gallery-cell"></div>
+							<div class="gallery-cell"></div>
+							<div class="gallery-cell"></div>
+							<div class="gallery-cell"></div>
+						</div>
 					</div>
 
 				</div>
@@ -110,7 +118,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<p class="mb-4">Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis
 						quam, sit
 						amet ultricies velit. Praesent ullamcorper dui turpis.</p>
-						<!-- FIXME (Remove) -->
 					<!-- <div class="ban-buttons">
 						<a href="about.html" class="btn">Read More</a>
 					</div> -->
@@ -421,8 +428,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 	<!-- //copyright -->
 
-
+	
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<script src="./Script/script.js"></script>
+	<!-- touch-friendly carousels with Flickity -->
 </body>
 
 </html>

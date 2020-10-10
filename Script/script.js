@@ -19,3 +19,9 @@ window.onscroll = function () {
         header.classList.remove("nav-colored");
     }
 };
+
+// var flkty = new Flickity( '.main-gallery', {
+//   // options
+//   cellAlign: 'left',
+//   contain: true
+// });
