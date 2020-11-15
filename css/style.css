@@ -94,7 +94,7 @@ header {
     width: 100%;
 }
 
-.nav-colored { background-color:#fff; }
+.nav-colored { background-color:rgb(0, 0, 0); }
 .nav-transparent { background-color:transparent;}
 
 .toggle,
@@ -423,7 +423,8 @@ li > a:only-child:after {
 /*--/banner --*/
 
 .main-banner {
-    background: url(../images/banner.jpg)no-repeat center;
+    /* background: url(../images/banner.jpg)no-repeat center; */
+    background: url(../images/perci-banner.jpg)no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
