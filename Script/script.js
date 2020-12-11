@@ -31,12 +31,6 @@ window.onscroll = function () {
 var checkbox = document.querySelector('.my-form input[type="checkbox"]');
 var btns = document.querySelectorAll(".my-form button");
 
-checkbox.addEventListener("change", function() {
-  var checked = this.checked;
-  for (var btn of btns) {
-    checked ? (btn.disabled = false) : (btn.disabled = true);
-  }
-});
 // form ends 
 
 //state and distrctict selection STARTs
@@ -82,7 +76,6 @@ var inputState = document.querySelector("#inputState");
 var inputDistrict = document.querySelector("#inputDistrict");
 inputState.addEventListener('change', function(event){
   var StateSelected = event.target.value;
-  console.log(StateSelected, "event-target-value");
   var optionsList;
   var htmlString = "";
 
@@ -195,16 +188,20 @@ inputState.addEventListener('change', function(event){
     case  "Pondicherry":
         optionsList = Pondicherry;
         break;
-}
+  }
 
 
   for(var i = 0; i < optionsList.length; i++){
     htmlString = htmlString+"<option value='"+ optionsList[i] +"'>"+ optionsList[i] +"</option>";
   }
- inputDistrict.innerHTML = htmlString;
+  inputDistrict.innerHTML = htmlString;
 
 });
-
-
-
 //state and district selection ENDs
+
+//Form submission starts
+var myForm = document.querySelector('#myForm');
+myForm.addEventListener('submit', function(){
+  console.log("submitted");
+});
+//Form submission ends
