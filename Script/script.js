@@ -8,17 +8,17 @@ function hideURLbar() {
 
 var header = document.querySelector('#header');
 
-window.onscroll = function () { 
-    "use strict";
-    if (document.body.scrollTop >= 650 || document.documentElement.scrollTop >= 650 ) {
-        header.classList.add("nav-colored");
-        header.classList.remove("nav-transparent");
-    } 
-    else {
-        header.classList.add("nav-transparent");
-        header.classList.remove("nav-colored");
-    }
-};
+// window.onscroll = function () { 
+//     "use strict";
+//     if (document.body.scrollTop >= 650 || document.documentElement.scrollTop >= 650 ) {
+//         header.classList.add("nav-colored");
+//         header.classList.remove("nav-transparent");
+//     } 
+//     else {
+//         header.classList.add("nav-transparent");
+//         header.classList.remove("nav-colored");
+//     }
+// };
 
 // var flkty = new Flickity( '.main-gallery', {
 //   // options
