@@ -35,14 +35,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900"
 		rel="stylesheet">
 	<!-- //Fonts -->
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
 
 </head>
 
 <body>
 
 	<!-- main-content -->
-	<div class="main-banner" id="home">
+	<div id="home">
 		<!-- header -->
 		<header class="header" id="header">
 			<div class="container-fluid px-lg-5">
@@ -60,8 +69,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<input type="checkbox" id="drop" />
 					<ul class="menu mt-2">
 						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#strengths">strengths</a></li>
+						<li><a href="http://127.0.0.1:5500/index.html#about">About</a></li>
+						<li><a href="index.html#strengths">strengths</a></li>
 						<li><a href="#products">Products</a></li>
 						<li><a href="#enquiry">Contact</a></li>
 					</ul>
@@ -70,92 +79,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 		</header>
 		<!-- //header -->
-		<!--/banner-->
-		<div class="banner-info">
-			<h3>Providing High Quality Products</h3>
-			<p class="my-sm-4 my-3">We offer the most complete industrial solutions in the country, for the research,
-				design
-				and development of materials</p>
-			<div class="ban-buttons">
-				<a href="#about" class="btn">Read More</a>
-			</div>
-		</div>
-		<!--// banner-inner -->
-
 	</div>
-	<!-- /hand-crafted -->
-	<section id="about" class="hand-crafted bg-light py-5">
-		<div class="container py-xl-5 py-lg-3">
-			<div class="row banner-grids">
-				<div class="col-lg-6 banner-image">
-					<div class="effect-w3">
-						<!-- <img src="images/technology-tool-metal-machine-lathe-industry.jpg" alt="Machine Tools" class="img-fluid image1"> -->
-						<div class="main-gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-							<div class="gallery-cell"></div>
-							<div class="gallery-cell"></div>
-							<div class="gallery-cell"></div>
-							<div class="gallery-cell"></div>
-							<div class="gallery-cell"></div>
-						</div>
-					</div>
-
-				</div>
-				<div class="col-lg-6 last-img pl-lg-5 p-3">
-					<h3 class="tittle mb-4">About Us</h3>
-					<p class="mb-4">Preci Tools  is a group of  Engineers with well equipped Technical skills in the field of CNC Toolings & solutions. </p>
-					<p class="mb-4">Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis
-						quam, sit
-						amet ultricies velit. Praesent ullamcorper dui turpis.</p>
-					<!-- <div class="ban-buttons">
-						<a href="about.html" class="btn">Read More</a>
-					</div> -->
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- //hand-crafted -->
-	<!--/ab -->
-	<section class="about py-lg-5 py-md-5 py-3" id="strengths"> 
-		<div class="container">
-			<div class="inner-sec-w3ls py-lg-5 py-3">
-				<h3 class="tittle text-center mb-lg-5 pb-3"> Our Strengths</h3>
-				<div class="feature-grids row mb-lg-5 my-3">
-					<div class="col-md-4 p-0">
-						<div class="bottom-gd p-lg-5 p-4">
-							<span class="fa fa-clock-o" aria-hidden="true"></span>
-							<h3 class="my-3">On Time Delivery</h3>
-							<p>We believe Time is Money &amp; Money is
-								Buisness .As Commitment , Reliabilty &amp;
-								Trust goes hand in hand. The same is
-								achieved by our Zero delay , ON TIME
-								DELIEVERY.
-							</p>
-						</div>
-					</div>
-					<div class="col-md-4 p-0">
-						<div class="bottom-gd p-lg-5 p-4">
-							<span class="fa fa-thumbs-up" aria-hidden="true"></span>
-							<h3 class="my-3"> Quality Product</h3>
-							<p>Quality is Trust & Trust is Everything.We beileve in long term association with our Clients and hence Quality comes First.We ensure Standards are maintained across our product.
-							</p>
-						</div>
-					</div>
-					<div class="col-md-4 p-0">
-						<div class="bottom-gd p-lg-5 p-4">
-							<span class="fa fa-usd" aria-hidden="true"></span>
-							<h3 class="my-3"> Value For Money</h3>
-							<p>A penny $aved is a penny earned. We thoroughly believe in delievering products that suit clients needs as well as Pockets.
-							</p>
-						</div>
-					</div>
-
-				</div>
-				<!-- services -->
-
-			</div>
-		</div>
-	</section>
-	<!-- //ab -->
 
 	<!-- collection -->
 	<section class="collection py-lg-4 py-md-3 py-sm-3 py-3" id="products">
@@ -225,7 +149,139 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 				</div>
 			</div>
-			<!--// row -->
+            <!--// row -->
+            <!-- row -->
+			<div class="row">
+				<div class="col-lg-7 col-md-6 collection-w3layouts">
+					<h4>Sit amet Lorem ipsum dolor</h4>
+					<p class="mt-2">sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit
+						amet,
+						eiusmod tempor incididunt ut labore et consectetur adipiscing sed do eiusmod</p>
+					<div class="view-buttn mt-lg-4 mt-3">
+						<a href="#FIXME" class="">Read More</a>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-6">
+					<img src="images/g4.jpg" alt="news image" class="img-fluid">
+
+				</div>
+			</div>
+            <!--// row -->
+            <!-- row -->
+			<div class="row my-lg-5 my-md-4 my-3">
+				<div class="col-lg-5 col-md-6">
+					<img src="images/g3.jpg" alt="news image" class="img-fluid">
+				</div>
+				<div class="col-lg-7 col-md-6 collection-w3layouts">
+					<h4>Tempor incididunt ut Lorem</h4>
+					<p class="mt-2">sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit
+						amet,
+						eiusmod tempor incididunt ut labore et consectetur adipiscing sed do eiusmod</p>
+					<div class="view-buttn mt-lg-4 mt-3">
+						<a href="#FIXME" class="">Read More</a>
+					</div>
+				</div>
+			</div>
+            <!--// row -->
+            <!-- row -->
+			<div class="row">
+				<div class="col-lg-7 col-md-6 collection-w3layouts">
+					<h4>Sit amet Lorem ipsum dolor</h4>
+					<p class="mt-2">sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit
+						amet,
+						eiusmod tempor incididunt ut labore et consectetur adipiscing sed do eiusmod</p>
+					<div class="view-buttn mt-lg-4 mt-3">
+						<a href="#FIXME" class="">Read More</a>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-6">
+					<img src="images/g4.jpg" alt="news image" class="img-fluid">
+
+				</div>
+			</div>
+            <!--// row -->
+            <!-- row -->
+			<div class="row my-lg-5 my-md-4 my-3">
+				<div class="col-lg-5 col-md-6">
+					<img src="images/g3.jpg" alt="news image" class="img-fluid">
+				</div>
+				<div class="col-lg-7 col-md-6 collection-w3layouts">
+					<h4>Tempor incididunt ut Lorem</h4>
+					<p class="mt-2">sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit
+						amet,
+						eiusmod tempor incididunt ut labore et consectetur adipiscing sed do eiusmod</p>
+					<div class="view-buttn mt-lg-4 mt-3">
+						<a href="#FIXME" class="">Read More</a>
+					</div>
+				</div>
+			</div>
+            <!--// row -->
+            <!-- row -->
+			<div class="row">
+				<div class="col-lg-7 col-md-6 collection-w3layouts">
+					<h4>Sit amet Lorem ipsum dolor</h4>
+					<p class="mt-2">sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit
+						amet,
+						eiusmod tempor incididunt ut labore et consectetur adipiscing sed do eiusmod</p>
+					<div class="view-buttn mt-lg-4 mt-3">
+						<a href="#FIXME" class="">Read More</a>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-6">
+					<img src="images/g4.jpg" alt="news image" class="img-fluid">
+
+				</div>
+			</div>
+            <!--// row -->
+            <!-- row -->
+			<div class="row my-lg-5 my-md-4 my-3">
+				<div class="col-lg-5 col-md-6">
+					<img src="images/g3.jpg" alt="news image" class="img-fluid">
+				</div>
+				<div class="col-lg-7 col-md-6 collection-w3layouts">
+					<h4>Tempor incididunt ut Lorem</h4>
+					<p class="mt-2">sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit
+						amet,
+						eiusmod tempor incididunt ut labore et consectetur adipiscing sed do eiusmod</p>
+					<div class="view-buttn mt-lg-4 mt-3">
+						<a href="#FIXME" class="">Read More</a>
+					</div>
+				</div>
+			</div>
+            <!--// row -->
+            <!-- row -->
+			<div class="row">
+				<div class="col-lg-7 col-md-6 collection-w3layouts">
+					<h4>Sit amet Lorem ipsum dolor</h4>
+					<p class="mt-2">sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit
+						amet,
+						eiusmod tempor incididunt ut labore et consectetur adipiscing sed do eiusmod</p>
+					<div class="view-buttn mt-lg-4 mt-3">
+						<a href="#FIXME" class="">Read More</a>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-6">
+					<img src="images/g4.jpg" alt="news image" class="img-fluid">
+
+				</div>
+			</div>
+            <!--// row -->
+            <!-- row -->
+			<div class="row my-lg-5 my-md-4 my-3">
+				<div class="col-lg-5 col-md-6">
+					<img src="images/g3.jpg" alt="news image" class="img-fluid">
+				</div>
+				<div class="col-lg-7 col-md-6 collection-w3layouts">
+					<h4>Tempor incididunt ut Lorem</h4>
+					<p class="mt-2">sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit
+						amet,
+						eiusmod tempor incididunt ut labore et consectetur adipiscing sed do eiusmod</p>
+					<div class="view-buttn mt-lg-4 mt-3">
+						<a href="#FIXME" class="">Read More</a>
+					</div>
+				</div>
+			</div>
+            <!--// row -->
 		</div>
 	</section>
 	<!-- collection -->
