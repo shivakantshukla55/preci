@@ -1951,3 +1951,16 @@ transform: rotate(45deg);
     top: 3px;
 }
 }
+
+.row {
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+  
+.row:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+.row.show {
+    transform: translateX(0);
+}
