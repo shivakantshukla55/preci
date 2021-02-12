@@ -209,7 +209,7 @@ myForm.addEventListener('submit', function(){
 //git test
 // test git for navbar-fix
 
-const boxes = document.querySelectorAll(".row");
+const boxes = document.querySelectorAll(".flash-swipe");
 
 const checkBoxes = () => {
   const triggerBottom = (window.innerHeight / 5) * 4;
